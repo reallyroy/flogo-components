@@ -6,7 +6,7 @@
   "title": "Publish EMS message",
   "description": "Publish EMS message",
   "author": "Mark Mussett <mmussett@tibco.com>",
-  "homepage": "https://github.com/mmussett/flogo-components/tree/master/activity/ems",
+  "homepage": "https://github.com/reallyroy/flogo-components/tree/master/activity/ems",
   "display": {
     "description": "Publish EMS message",
     "category": "Utility",

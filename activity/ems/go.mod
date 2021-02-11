@@ -6,8 +6,8 @@ require (
 	github.com/TIBCOSoftware/flogo-contrib v0.5.8
 	github.com/TIBCOSoftware/flogo-lib v0.5.8
 	github.com/konsorten/go-windows-terminal-sequences v1.0.2 // indirect
-	github.com/mmussett/ems v0.0.0-20191106182123-542de08027bc
 	github.com/opentracing/opentracing-go v1.1.0
+	github.com/reallyroy/ems v0.0.0-20210211070153-8917a108c6c8
 	github.com/sirupsen/logrus v1.4.2 // indirect
 	go.uber.org/atomic v1.5.1 // indirect
 	go.uber.org/multierr v1.4.0 // indirect

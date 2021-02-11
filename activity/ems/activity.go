@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	ems "github.com/mmussett/ems"
+	ems "github.com/reallyroy/ems"
 
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
@@ -41,7 +41,7 @@ var (
 	errorDeliveryModeIsNotAString        = errors.New("delivery mode is not a string")
 	errorExpirationIsNotANumber          = errors.New("expiration is not a number")
 	errorExchangeModeIsNotAString        = errors.New("exchange mode is not a string")
-	errorTimoutIsNotANumber				 = errors.New("timeout is not a number")
+	errorTimoutIsNotANumber              = errors.New("timeout is not a number")
 )
 
 var log = logger.GetLogger("activity-tibco-ems")
@@ -194,9 +194,9 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error) {
 		context.SetOutput(ovResponse, response)
 	case "receive-only":
 
-		response, _, err := client.Receive(destination,destinationType,timeout)
+		response, _, err := client.Receive(destination, destinationType, timeout)
 		if err != nil {
-			logError("Timeout occurred while trying to receive from destination '%s",destination)
+			logError("Timeout occurred while trying to receive from destination '%s", destination)
 			return false, err
 		}
 		log.Debugf("Response payload: %s", response)
@@ -204,8 +204,6 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error) {
 		context.SetOutput(ovResponse, response)
 
 	}
-
-
 
 	return true, nil
 }
