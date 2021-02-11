@@ -1,7 +1,7 @@
 {
   "name": "ems",
   "type": "flogo:activity",
-  "ref": "github.com/mmussett/flogo-components/activity/ems",
+  "ref": "github.com/reallyroy/flogo-components/activity/ems",
   "version": "0.0.1",
   "title": "Publish EMS message",
   "description": "Publish EMS message",
